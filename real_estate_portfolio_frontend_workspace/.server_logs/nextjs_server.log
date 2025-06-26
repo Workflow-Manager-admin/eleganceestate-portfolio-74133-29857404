@@ -2,18 +2,16 @@
 > real_estate_portfolio_frontend@1.0.0 dev
 > next dev -p 3000 -H 0.0.0.0
 
-  ▲ Next.js 14.2.3
-  - Local:        http://localhost:3000
-  - Network:      http://0.0.0.0:3000
-
- ✓ Starting...
-Attention: Next.js now collects completely anonymous telemetry regarding usage.
-This information is used to shape Next.js' roadmap and prioritize features.
-You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-https://nextjs.org/telemetry
-
- ✓ Ready in 1433ms
- ○ Compiling / ...
- ✓ Compiled / in 4.8s (1197 modules)
- GET / 200 in 5115ms
- ✓ Compiled in 286ms (591 modules)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at doListen (node:net:2014:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 3000
+}
+[?25h
