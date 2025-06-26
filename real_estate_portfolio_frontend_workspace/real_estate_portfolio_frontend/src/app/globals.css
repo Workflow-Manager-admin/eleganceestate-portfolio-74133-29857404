@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Color palette for elegance estate realty */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #17415e;
+  --secondary: #bcd4e6;
+  --accent: #fbb040;
+  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #bcd4e6;
+    --secondary: #17415e;
+    --accent: #fbb040; /* Accent remains */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background 0.5s, color 0.5s;
+}
+
+.bg-primary { background-color: var(--primary) !important; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.text-primary { color: var(--primary) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.text-accent { color: var(--accent) !important; }
+.border-accent { border-color: var(--accent) !important; }
+
+::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+  background: var(--secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 6px;
+}
+
+a {
+  color: var(--primary);
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--accent);
+}
