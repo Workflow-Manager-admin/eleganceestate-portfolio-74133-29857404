@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EleganceEstate - Real Estate Agent Portfolio
+
+An elegant, modern static portfolio website for real estate professionals, built using Next.js 14, Tailwind CSS, and Framer Motion. Showcases property listings, agent achievements, testimonials, agent bio, and a contact form.
+
+## Features
+
+- Responsive multi-section homepage
+- Interactive property cards with hover effects
+- Agent achievements/awards showcase
+- Client testimonials with animated horizontal scroll
+- Visually engaging animations and transitions
+- Agent profile sidebar section
+- Static contact form protected via Formspree, with mailto fallback
+- Modern, elegant, totally static site design
+
+## Design
+
+- **Colors**: Primary (`#17415e`), Secondary (`#bcd4e6`), Accent (`#fbb040`)
+- **Typography**: Inter font (modern sans-serif)
+- **Layout**: Single page, prominent hero/banner, sections for listings, achievements, testimonials, profile, and contact.
+- **Image Assets**: Place signature agent photos as `/agent-hero.png` and `/agent-profile.png` in the `public/` or `src/app/` directory for best results.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build for static export
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
+The export outputs to `/out/`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customization
 
-## Learn More
+- Update static property and testimonial data in `src/app/page.tsx`.
+- Adjust styling by editing `globals.css` or `tailwind.config.js`.
+- Swap agent images in `/src/app/` (named `agent-hero.png`, `agent-profile.png`).
+- Replace email in Contact section for your workflow needs.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Designed to be clean, fast and easily adaptable for professional real estate portfolios.
